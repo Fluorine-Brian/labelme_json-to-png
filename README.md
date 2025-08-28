@@ -4,13 +4,13 @@ This code used AS-OCT image as an example.
 
 Add specific part of your mask into 'labels.txt'
 
-项目安装和运行可参考“labelme总结文档”
+labelme2voc的使用：项目安装和运行可参考“labelme总结文档”
 
 # 数据集转换
 
 ### 1 在github下载labelme=v3.16.2的项目
 
-### 2 项目中example中有labelme2voc和labelme2coco脚本 复制下来放入标注数据文件夹同级目录
+### 2 项目中example中有labelme2voc脚本 复制下来放入标注数据文件夹同级目录
 
 ### 3 创建labels.txt 注意要和实际标注时的标签一样
 
@@ -26,11 +26,8 @@ jingzuangti
 
 ### 4 进行转换
 
-即可将标注的图片转换成coco格式 命令行执行：
-
 ```
-python .\labelme2coco.py   标注文件夹名称  输出转化后文件夹名称    --labels   标签命名文件（文件中最好不要有中文）
-python .\labelme2coco.py mylabelme data_dataset_voc  --labels  labels.txt
+python .\labelme2voc.py   标注文件夹名称  输出转化后文件夹名称    --labels   标签命名文件（文件中最好不要有中文）
 ```
 
 将标注的图片转换成voc格式 命令行执行：
